@@ -106,12 +106,82 @@ cloudera -> sentry ,cloudera manager, spark , impala , kudu , parquet , kafka
 hortonworks-> atlas , ranger , tez , nifi 
 
 #### cloudera vs hortonworks Merged together !! 
+![alt text](https://github.com/BillMarkEg/yet-another-Data-Analytics-Visualization-Stuff/blob/main/cloudera%20merge%20with%20hortonworks.png)
+
+#### Data stragegy 
+data is growing so fast || data in realtime like iot/sensors =>  go to big data and stream processing tools
+tools : visuals/code
+################################################################################################################################################
+## Enterprise data management
+this course consists of 3 parts
+
+### 1-Enterprise data strategy
+
+#### data governance
+1- make data dictionary : describe the metadata ex (table describtion,dtypes,project,example)
+2-naming convention:abbreviation | _ or camelcase 
+3-security mangement : to have some1 from security team to know how to secure data and use encryption keys
+4-make corporate grossary : defined company terminologies ex(edge,mass,flex..etc)
+5-change management : document/approve/decline changes  
+
+#### who do data governance:
+non tech : 
+1-CDO(chef data offecier) 
+2-governance director (direct both subject matter experts + data steward)  
+3-data steward (communicate with business)
+tech :
+1-subject matter experts( 1-  DBA +  2 -security team member) to do technical work  
+2-data modeler 
+
+#### tools
+closed source : ER studio , ERWin
+open source :ER one , open modelsphere
+
+#### Data governance program 
+1-standups 
+2-make a CRs form for changers to fill
+3-ask if the CR will affect other systems ?
+4-ask requesters of change to attend meeting and communicate with other users
+
+#### types of data
+Master : data about entity  | ex: customer,hotel   | has low fill rate | the dimention in dimentional modeling
+trx : eg.sales , check-in   | has high fill rate | fact tables in Dimetional modeling
+lookup : to map something ex (id and name) , eg -> egypt | it is a dimention too in dimentional modeling
+meta-data : data about data
+
+#### Data Modeling (ERD)
+- how masters entity connect together and make trx data
+- hotel and customer to make checkin trx 
+- metadata like hotelname to be string 
+
+logical model :  physical model 
+entity        -> table
+attribute     -> column
+row           -> record
+relationship  -> pk/fk
+
+forward engineering : to generate code(DDL scripts to create it) from physical model
+
+### 2-managing and working with data
+
+#### 
+####
+
+### 3-getting value from data
+
+####
+####
+####
+####
 
 
+################################################################################################################################################
+## Manageing data in the cloud
 
+################################################################################################################################################
+## principals for data quality measures
 
-
-
+################################################################################################################################################
 
 
 
