@@ -58,6 +58,54 @@ now  -> behavioral , dont keep what is not needed (default to keep) , open sourc
 #### data gravity on cloud
 means the more data you move and replicate the more you pay $ and its hard to move/upload to cloud
 
+#### MPP
+![alt text](https://github.com/BillMarkEg/yet-another-Data-Analytics-Visualization-Stuff/blob/main/mpp.png)
+
+so now dwh too has parrall processing like spark and big data tech so its so fast and use sql too.
+some notes:
+Hbase/kudu -> big data no-sql works in mpp as well but not sql
+
+#### ETL 
+old school: using onpremises machines
+new school: Ipaas is to make a cluster on cloud 
+
+**CDC **: capture changes(insert/updates) on DBs
+**ELT **: 1- if distincation do processing better than staging tool(spark/datastage/..) 
+      2- if we wanna separate data-movement & data processing (we do this of data is too large to move )
+**Data Virtualization** : processing data in source without movement and can connect to many data sources (Locality processing & parrallel processing ) ex: **spark/presto**
+
+#### data profiles
+1-data scientist , 2-engineer  
+3-Data steward position: ensuring the quality, including the metadata,logging ,governance and facilitate access to it  to business users so they can understand.
+4-ML engineer : feature engineering, model deployment, monitor model , retrain incase of issues
+5-chef data officer: Data strtegy - data culture - data management and protection
+
+#### technologies 
+Hadoop : got from GFS (Google file system)  and M/R BY #yahooooo providers =>cloudera 
+Spark : berkeley lab  - in-memory  $data bricks and cloudera too
+
+#### sql engines in big data
+hive: first sql in hadoop By Facebook, phoenix : relation databse based on hbase , spark, presto , dwh
+presto : by Facebook too  to solve hive and M/R issues , **do caching & mpp like dwh || don't have storage like spark just use data virtualization concept**
+Kafka: **message processing**/storage system by linkedin/ then cofluent(optimized it to use sql) 
+impala : mpp in hadoop
+
+#### common dominant formats
+apache arrow : columner format **in memory**
+apache parquet : columner format **in disk** so **better compression ** and **easy partitioning** of data so **save cloud cost $**
+
+#### data governance tools
+apache atlas :categorize data (like cloudera navigator)
+apache ranger :role authentification across big data technologies (like apache sentry in cloudera)
+
+#### machine learning
+big data give power and large cluster to tain data instead of just taining a sample  as-of limited processing power
+
+#### cloudera vs hortonworks
+cloudera -> sentry ,cloudera manager, spark , impala , kudu , parquet , kafka
+hortonworks-> atlas , ranger , tez , nifi 
+
+#### cloudera vs hortonworks Merged together !! 
 
 
 
