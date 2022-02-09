@@ -163,8 +163,18 @@ relationship  -> pk/fk
 forward engineering : to generate code(DDL scripts to create it) from physical model
 
 ### 2-managing and working with data
+Embedded SQl : quering tables directly from ur backend-application (network-load) 
+storeed procedure : is better (separate app from db) (no network load) (more data encapulation) (safe from sQl ingesions attacks)
 
-#### 
+data compliance audit:
+1-store failed login attempts 
+2-change management records : if usr needs to change anything
+3-principal of least previleges : to give each user minumum previligies to get his task done
+4-data retention
+5-appreperiate types of data 
+
+
+####  
 ####
 
 ### 3-getting value from data
