@@ -167,23 +167,28 @@ Embedded SQl : quering tables directly from ur backend-application (network-load
 storeed procedure : is better (separate app from db) (no network load) (more data encapulation) (safe from sQl ingesions attacks)
 
 data compliance audit:
+database acess ::
 1-store failed login attempts 
 2-change management records : if usr needs to change anything
 3-principal of least previleges : to give each user minumum previligies to get his task done
-4-data retention
-5-appreperiate types of data 
 
-
-####  
-####
+subject data ::
+4-appreperiate types of data (foreg. date is date not ts or sting)
+5-data retention
+6-who can acess and how its secured ?
 
 ### 3-getting value from data
 
-####
-####
-####
-####
+Data engineer:collect data 
+bi :  finds patterns - what if ? (past analyses) (sql + bi tools like tabeau)
+data Scientist : (sampling/hyposesis/A/b testing/predictions) 
 
+**predictions** 
+supervied algo (tain/test datasets are available): decision trees | naive bayes | regression | svm
+non-supervied algo tain only datasets are available: clustering(kmeans/knn) | anomaly detection
+
+tools for algorithms: python(scikit-learn/tensorflow) -- R(caret)
+visualization :  ex:matplot lib / or use tools like tableau
 
 ################################################################################################################################################
 ## Manageing data in the cloud
