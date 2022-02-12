@@ -204,6 +204,87 @@ visualization :  ex:matplot lib / or use tools like tableau
 5-archive  : data become cold
 6-destroy  : data is removed from cloud
 
+#### control examples
+Control : allow/prevent actions
+![alt text](https://github.com/BillMarkEg/yet-another-Data-Analytics-Visualization-Stuff/blob/main/control%20examples.png)
+
+#### Data Classification
+1-Data Type
+2-Contrains 
+3-ownership
+4-retention
+5-business constains
+6-encryption
+
+#### Data reClassification
+1-Data Transformation (reCheck classification of Data) ex moving data from raw to business scehma 
+2-Data Movement to another platform (reCheck classification of Data) ex moving data from test (bde)  schema to production ex  ds schema  so encryption is needed (reClassification)
+
+#### Cloud storage architecture
+**IAAS** (you ctr os and every thing on in )
+1-ephemeral : exists only while VM is running
+2-volume : like local hard disk (folders and files ) we can use for rdbms or OS or anything just like hard-disk
+3-object/blob : used for large files (all data stored with same level with id so fast access to data )
+4-raw : 
+5-long term : for data archiving 
+
+**PAAS** (you ctr app and data)
+1-Relation db 
+2-key value pair : like Hbase
+3-Map reduce : model that process data in chunks
+
+**SAAS** (ex google drive)
+1-information storage and management : ui to acess data
+2-content/file storage : use volume or object for storing files on cloud
+3-CDN(content deleivery Network) : data is stored and replicated in different regions so its fast to retrieve.
+
+#### Data replication
+Strict : data is replicated on all nodes but only portion % of it is avail for read/write then rest is synced (fast/no overhead) 
+eventual : data is replicated on all nodes and all is avail for read/write (extreme fast / overhead in syncing )
+
+#### storage threads
+1-Data breaches : data movement to public (like what happedn in hooliwood)
+2-week identy and acess mng : week password or writing password in code and upload it to github
+3-insecure api : give api to others and it contains bugs they can acess other data or attach 
+4-system vulnerabilities : in os itself like windows or linux issues 
+5-accound hijack : login with ur password (may get it through phishing like face(p)book app)
+6-malicious insider attach : attach comes from members inside 
+7-Dos : hard-drive - memory can't work due to attach 
+8-Ddos : distributed dos
+9-spoofing identy : normail log using ur password and uname 
+10-tampering with data : modification of data you have 
+
+#### State of data
+in motion : currently being accessed or transferred from host to another (downloaded - usb move - ftb)
+in rest   : data not moved : ex archived 
+in use    :  is data that is currently being updated, processed, accessed and read by a system
+
+#### encryption in data:
+raw level : by cloud provider when data is loaded imported/exprted from it
+storage level : 
+                  1-instance : exist on volume/object/application(of database)/file storage itself
+                  2-proxy : there is another machine that ctr encryption of data
+                  
+#### Data masking : 
+1-static : just once we do it manually change the data for testing
+2-dynamic : a layer exists on production between client and database to change data dynamiclly through : 
+                                                                                                    1- random substitution
+                                                                                                    2- algorithmetic substitution
+                                                                                                    3-shuffle data together
+                                                                                                    4-masking (substitution only **part** of the data)
+                                                                                                    5-deletion of specific **part** of the data
+#### Data anonimization :
+1-direct : data that identify the user like msisdn/name
+2-indirect : data that can match together to identify user indirectly
+so we **encrypt** them all.
+
+#### Data Tokenization : 
+tokenization uses a token to protect the data,
+whereas encryption uses a key.
+tokenization **swaps** sensitive data for an irreversible, nonsensitive placeholder (token) and securely stores the original, sensitive data **outside** of its original environment, and encryption **encodes the content** of a data element where it resides with a key shared between whoever is encrypting the data and whoever need to decrypt it.
+
+#### Data leakage protection (DLP) :
+ctr what data end user can transfere/download to avoid data loss or data leakage
 
 ################################################################################################################################################
 ## principals for data quality measures
