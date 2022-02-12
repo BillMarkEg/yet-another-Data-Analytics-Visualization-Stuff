@@ -192,6 +192,18 @@ visualization :  ex:matplot lib / or use tools like tableau
 
 ################################################################################################################################################
 ## Manageing data in the cloud
+#### phases
+1-Create: get data and classify (critical/normal data for security)
+2-store: where to store & how  |  encryption | tokenization(splitting) | data Masking: fake copy of data for testing | digital right management : like copywrites so prevent                                                                                                                                                       users from editing ur content
+3-use : 
+            - if there is modification so its in creation phases so it requires reClassification
+            - most vulnerable : may include movement of data to insecure storage 
+            - decryption for procession 
+           
+4-share 
+5-archive  : data become cold
+6-destroy  : data is removed from cloud
+
 
 ################################################################################################################################################
 ## principals for data quality measures
