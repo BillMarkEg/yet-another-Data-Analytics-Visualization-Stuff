@@ -286,6 +286,36 @@ tokenization **swaps** sensitive data for an irreversible, nonsensitive placehol
 #### Data leakage protection (DLP) :
 ctr what data end user can transfere/download to avoid data loss or data leakage
 
+#### data security:
+consists of 1-confidenciality : least preveligies granted for user to do his task on data
+            2- availability : data avail 24/7
+            3- integrity : data is the same and prevent unauthorized changes
+#### Data roles
+subject : the subject of data 
+controller : who define why we collect data how it will be processed and by who 
+processer : who work on it 
+steward : who maitain data governance on data & define business rules
+data custodian : who technically store and maintain data (ex: DBA)
+data owner : who own the data 
+
+#### pii (identity data that should be secured)
+FullName(should be full)-adress-email-id-passport-vechleNum-DOB-birthplace-msisdn-creditCard-fingerprint-handwriting-face-loginName-passwords
+
+#### DRM (data right Mng)
+1-Acl (read/write/excute)
+2-integration with mail server
+3-prevent print document/screenshots/copt-paste/page watermarking 
+
+autorization : can he acess or not , it can be : 
+1-sigle factor: just password
+2-multifactor : password + RSA + ensure not robot and more..
+
+authentication : what can you do (ACL)
+
+#### cold data
+1-retention --> 2-archiving --> 3-deletion
+we should **keep logs monitored** on who use data and data modification
+
 ################################################################################################################################################
 ## principals for data quality measures
 
