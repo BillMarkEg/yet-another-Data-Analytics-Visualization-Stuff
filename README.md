@@ -351,51 +351,55 @@ helps to get better understanding of data through 1-Catlan 2-Ataccama
 <br> detect pii
 <br> security
 <br> autdit log
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-
-
+#### ML models
+<br> split data into trani and test
+<br> define hyperpara model use in learning 
+#### ML cross validation
+<br> split data into multiple folds
+<br> train model on all folds except one
+<br> evaluate on last one
+<br> repeat step 2 & 3
+<br> average result -> output performance 
+#### ML risk minimization
+<br> it always tries to minimize the error/loss
+#### containerize
+<br> build ML as a service on cloud
+#### versioning ML
+<br> build multiple ML models 
+<br> with different hyperpara
+<br> tain all and test the result on different ML objects/containers on cloud
+#### ML lifecycke
+<br> collect data
+<br> data preparation 
+<br> data wrangling
+<br> analyse data
+<br> train
+<br> test
+<br> deploy
+#### MLDT : ML metadata lib
+<br> tracks metdata of model excution
+<br> inf about lineage
+<br> model artifacts (all parameters inputed into model)
 
 ################################################################################################################################################
+## Introduction to SQL
+
+<br>
+<br>
+
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+
+
 
 
 
