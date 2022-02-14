@@ -319,6 +319,27 @@ we should **keep logs monitored** on who use data and data modification
 ################################################################################################################################################
 ## principals for data quality measures
 
+#### ML 
+<br> supervised : labels
+<br> unsupervised : no labels | find relationships between data
+<br> semi supervised : fiew labels as it tries to use all data
+<br> reEnforcement : learn from feedback and reward system 
+
+#### Feature Engineering
+<br> imputation : nulls and missing 
+<br> handling outliers
+<br> binning 
+<br> log transform
+<br> once hot encoding
+<br> grouping operations 
+<br> Scaling
+
+#### Data Quality metrics
+1- ratio of data to error \
+2- ratio of nulls \
+3- data transformations errors eg.float/decimal in RM \ 
+4- amount of dark data : use profiling & data discovery to understand it \
+
 ################################################################################################################################################
 
 
