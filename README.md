@@ -335,10 +335,10 @@ we should **keep logs monitored** on who use data and data modification
 <br> Scaling
 
 #### Data Quality metrics
-1- ratio of data to error \
-2- ratio of nulls \
-3- data transformations errors eg.float vs decimal in RM \ 
-4- amount of dark data : use profiling & data discovery to understand it \
+1- ratio of data to error \n
+2- ratio of nulls \n
+3- data transformations errors eg.float vs decimal in RM  \n
+4- amount of dark data : use profiling & data discovery to understand it \n
 
 ################################################################################################################################################
 
