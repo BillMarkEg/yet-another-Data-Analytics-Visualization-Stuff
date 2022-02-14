@@ -340,6 +340,61 @@ we should **keep logs monitored** on who use data and data modification
 3- data transformations errors eg.float vs decimal in RM  \n
 4- amount of dark data : use profiling & data discovery to understand it \n
 
+#### Data profiling
+helps to get better understanding of data through 1-Catlan 2-Ataccama
+
+#### Data lineage 
+<br> PII  : data identify user eg. msisdn and national id
+<br> PII can be sensitive : ID, msisdn, passport ,visa
+<br> PII can be in-sensitive : zip code, dob, gender, race
+#### Benefits of data lineage and governance
+<br> detect pii
+<br> security
+<br> autdit log
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+
+
+
 ################################################################################################################################################
 
 
