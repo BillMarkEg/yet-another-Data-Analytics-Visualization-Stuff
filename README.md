@@ -384,21 +384,19 @@ helps to get better understanding of data through 1-Catlan 2-Ataccama
 ################################################################################################################################################
 ## Introduction to SQL
 
-<br>
-<br>
+<br> table names should be singular -> person NOT persons 
+<br> keywards of sql should be uppercase
+<br> select * is **bad practise** as may source add columns
+<br> where is boolean condition 
+<br> IN -> true if any hit
+<br> NOT IN -> true if all hit
+<br> IS is same as = but for NULLS , IS NOT is the same as <> for nulls
+<br> full outer join = left outer union right outer 
+<br> self join -> useful when table contains hierarchical eg.manger id 
+<br> if table is fk for another table (ex. alter table table_x add  constrain cons_name  forien key (columnName)  refrences table_y (column) ) so cant drop table_ y
 
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-
+################################################################################################################################################
+## SQL server :understanding database fundamentals (98)
 
 
 
