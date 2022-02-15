@@ -397,6 +397,18 @@ helps to get better understanding of data through 1-Catlan 2-Ataccama
 
 ################################################################################################################################################
 ## SQL server :understanding database fundamentals (98)
+#### DDL
+<br> enable/disable trigger
+<br> update stats : for optimization
+#### DataTypes
+<br> date
+<br> datetime
+<br> datetime:with more details
+<br> datetime offset:aware of specific timezome
+<br> time
+<br> smalldatetime:without second or second fraction
+<br>
+<br>
 
 
 
