@@ -423,6 +423,12 @@ helps to get better understanding of data through 1-Catlan 2-Ataccama
 <br> Select * into B from A : create new table called B as select * from A
 <br> **Truncate** is much faster than **delete from** B 
 #### Understanding Data Storage 
+<br> Normainzation: 1NF => split multivar attributes into multiple lines 
+<br> 2NF => remove partial dependancy : column that has the same change rate as ID eg. course-name and course ID so we move it with ID to another table and make ID as FK
+<br> 3NF => remove transit dependancy 
+<br> transitive dependency: eg. Book → Author_Nationality: If we know the book name, we can determine the author's nationality via the Author column.
+<br> so we move book_id,book_name,author_id -> table 1 
+<br> auther_id,auther_name,nationality -> table 2 
 
 
 
