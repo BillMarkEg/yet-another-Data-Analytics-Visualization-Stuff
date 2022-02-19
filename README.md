@@ -407,21 +407,22 @@ helps to get better understanding of data through 1-Catlan 2-Ataccama
 <br> datetime offset:aware of specific timezome
 <br> time
 <br> smalldatetime:without second or second fraction
-<br>
-<br>
-
-
-
-
-
-
-
-
-
-
-
-
-
+#### unicode Types
+<br> nchar
+<br> nvarchar
+<br> ntext :  while nvarchar(max) will try to store the data within the database record itself. 
+#### Binary Types
+<br> Binary
+<br> Image
+<br> **VarBinary**
+#### Another Types
+<br> **XML**
+<br> **SqlVariant** :  variable to hold values of any data type with a maximum length of 8000 bytes plus 16 bytes that holds the data type information,
+#### Notes 
+<br> Query A **Except** Query B : all in A and not in B
+<br> Select * into B from A : create new table called B as select * from A
+<br> **Truncate** is much faster than **delete from** B 
+#### Understanding Data Storage 
 
 
 
