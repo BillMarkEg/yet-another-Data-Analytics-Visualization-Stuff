@@ -429,7 +429,29 @@ helps to get better understanding of data through 1-Catlan 2-Ataccama
 <br> transitive dependency: eg. Book → Author_Nationality: If we know the book name, we can determine the author's nationality via the Author column.
 <br> so we move book_id,book_name,author_id -> table 1 
 <br> auther_id,auther_name,nationality -> table 2 
-
+#### Pk and FK
+<br> FK can reference to PK or unique column 
+<br> self reference is allowed : FK reference to another column in the same table
+<br> Column constraints and table constraints have the **same function** 
+<br> the difference is in where you specify them. Table constraints allow you to specify more than one column in a PRIMARY KEY, UNIQUE, CHECK, or FOREIGN KEY
+<br> Column-level constraints (except for check constraints) refer to only one column.
+<br> we use composite pk in Manay To Many tables foreg. **Not only this case for sure.**
+<br> FK can referes only to column (PK/unique) in the same db only 
+#### DB adminstration
+<br> authentication :
+<br> 1- SQL logins : sepate login to db and separate db users
+<br> 2- Windows login : SSO to both windows and databse with same users 
+<br> users : dbo == sysadm 
+<br> Guest : user without login => just a certificate to sign in code not user by using key 
+<br> user group : make a role for group of users have the same previlieges
+<br> Grant: give permissions 
+<br> DENY : Denies a permission to a principal. 
+<br> REVOKE : Removes a previously granted or denied permission
+eg. If I grant the sales group access I can later revoke it.
+However I could also deny you access, and even through you're in the sales group you'll not have access.
+<br> to give user ability to give previligies ==> grant **control**
+<br>  to give user ability to excute procedures => grant **excute**
+<br>  to give user ability to acess metadata => grant **view definition**
 
 
 
