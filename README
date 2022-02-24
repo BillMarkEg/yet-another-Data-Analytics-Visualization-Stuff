@@ -456,8 +456,78 @@ However I could also deny you access, and even through you're in the sales group
 <br> **DB-Levels-Permissions** on Endpoint/db/schema/column level
 <br> **DB-build-in-roles** : owner => can drop db and do anything 
 <br> security_admin : modify roles and manage permissions
-<br> access admin :n    
+<br> access admin : Manage loging to windows/db    
+<br> backup operator : can backup
+<br> ddl-admin : can create ddls
+<br> data writer : can insert/update/delete  data in user tables  
+<br> data reader : read data
+<br> deny data writer : can't write 
+<br> u can build mixed roles
+<br> Statistics (cardinality of colums , uniqueness, count of tables . . . ) sould be updated regulary for selecting better excution plan
 <br> 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 
