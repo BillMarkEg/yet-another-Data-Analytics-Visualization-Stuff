@@ -450,9 +450,14 @@ helps to get better understanding of data through 1-Catlan 2-Ataccama
 eg. If I grant the sales group access I can later revoke it.
 However I could also deny you access, and even through you're in the sales group you'll not have access.
 <br> to give user ability to give previligies ==> grant **control**
-<br>  to give user ability to excute procedures => grant **excute**
-<br>  to give user ability to acess metadata => grant **view definition**
-
+<br> to give user ability to excute procedures => grant **excute**
+<br> to give user ability to acess metadata => grant **view definition**
+<br> SQL Server endpoint : the point of entry into SQL Server. It is implemented as a database object that defines the ways and means in which SQL
+<br> **DB-Levels-Permissions** on Endpoint/db/schema/column level
+<br> **DB-build-in-roles** : owner => can drop db and do anything 
+<br> security_admin : modify roles and manage permissions
+<br> access admin :n    
+<br> 
 
 
 
