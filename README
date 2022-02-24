@@ -463,13 +463,14 @@ However I could also deny you access, and even through you're in the sales group
 <br> data reader : read data
 <br> deny data writer : can't write 
 <br> u can build mixed roles
-<br> Statistics (cardinality of colums , uniqueness, count of tables . . . ) sould be updated regulary for selecting better excution plan
+<br> **collect Statistics** (cardinality of colums , uniqueness, count of tables . . . ) sould be updated regulary for selecting better excution plan
+<br> auto update stat when 20%  or more of data 's changed
+<br> index : better searching 
+<br> index : can be fragmented due to delete,insert and update  
+<br> control index fragmentation => rebuild index , disable index , reorganize index (note:index rebuld updates stat but index reorganize dont)
+<br> database maintaince plans : has ui for automated index framentation 
+<br> consistancy check : corruption happens (disk failture so i/o issues) so **DBCC Checkdb** commands to check for corruption
 <br> 
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>
 <br>
 <br>
