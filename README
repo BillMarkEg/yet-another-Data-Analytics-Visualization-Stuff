@@ -492,6 +492,83 @@ XXXXX <br> backup types and demo
 <br> Document : shema-FREE + json format instead of records || good for web data and personlization Eg.MongoDB
 <br> Wide Column store : semi-Shema + column families  Eg.HBASE 
 <br> Graph DB : relationship focused (relationships between users not their data)
+<br> #### KeyValue stores 
+<br> There is database & row_id to join tables together 
+<br> #### wide column stores 
+<br> No database but super tables & there is super columns that have sub columns (ex name : first,second )
+<br> #### Document
+<br> Document has Databases(which is table in normal naming)
+<br> Document can has subdocument as data type (like sub json )
+<br> Document can refer to another doclument by storing its document id in different column(key in json here)
+<br> #### Graoh 
+<br> Graph has :
+<br> Nodes 
+<br> Features of each Node 
+<br> Edges with another nodes Eg. ahmed has (name ,age ) Edge(frient-relationshio with #ESlam) Edge(placed-relationshio with #order371)
+<br> #### Relational is better if
+<br> high scans
+<br> trx data ex financial, debit/credit, buying & selling and so on
+<br> consistancity is imp
+<br> Bi reports and aggregations , joins 
+<br> Enterprise OLTP
+<br> #### No sql is better if
+<br> low scans
+<br> extreme speed is required
+<br> Web corperate (web data, logs and unstructured data)
+<br> No index is okay
+<br> can fit in BI piplines but not reports (as its not sql/no schema so not good for bi ,complex queries and adhoc ones)
+<br> #### cloud option
+<br> if size of datais large => more money
+######################################################################################################################################
+## Recognize the need for Document Database 
+#### Trx processing Vs Analytical procession
+<br> Ensure **inserts** are correct (little rows)
+<br> **acess** recent data 
+<br> *updates*  
+<br> Fast Acess 
+<br> single sources (database)
+#### Analytical 
+<br> Large batches
+<br> historical processing 
+<br> Long running jobs not realtime
+<br> Multiple Data sources 
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
