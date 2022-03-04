@@ -473,23 +473,25 @@ However I could also deny you access, and even through you're in the sales group
 XXXXX <br> backup types and demo  
 <br>
 ######################################################################################################################################
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+#### Intro 
+<br> no sql = no relational 
+<br> null not stored
+<br> distributed/redundant architecture -> not single point of failure 
+<br> C(different statue across nodes?)A(retrieve speed)P(Data not at same place together so can recover)
+<br> Relational : C + p 
+<br> nosql Db   : A + P
+<br> Buffer & Flush into memory (volunerable to loss (but good/less I/O) )
+<br> only PK can be indexed 
+<br> Query :MPP (M/R) | Like program not sql
+<br> Microsoft : Azure/haddop-on-azure/HBase
+<br> AWS : simpleDB/DynamoDB/Elastic M/R
+<br> MongoHQ :mongoDB on cloud
+<br> ALL **IAAS**
+<br> #### NOSQL TYpes
+<br> Key-value : shema-FREE(still rows with different schema and may different key type as well)
+<br> Document : shema-FREE + json format instead of records || good for web data and personlization Eg.MongoDB
+<br> Wide Column store : semi-Shema + column families  Eg.HBASE 
+<br> Graph DB : relationship focused (relationships between users not their data)
 <br>
 <br>
 <br>
