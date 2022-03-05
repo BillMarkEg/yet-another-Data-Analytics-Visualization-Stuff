@@ -532,40 +532,58 @@ XXXXX <br> backup types and demo
 <br> historical processing 
 <br> Long running jobs not realtime
 <br> Multiple Data sources 
+#### Note
+<br> NOsql Fast writes -> no need for check consistancity after each write
+<br> Document db is considered as key/value nosql too                                                       
+<br> Nosql -> low scan vs high scan -> Hdfs(big data lake)
+#### CAP
+<br> C -> every node recieve same read/write or Error
+<br> A -> Every request return with no Errors
+<br> P -> network failure between nodes will be auto recovered
+<br> so we choose only 2 Eg. when Partition is failed in node so 2-options 
+<br> 1:: to show Error -> consistencity option
+<br> 2:: to return it -> availability option 
+(pic19) ### N0SQL -> BASE  
+<br> Basicaly Available -> replication/sharding so availablity is good
+<br> Soft State -> consistencity is not guaranted in read  
+<br> Eventual consistencity -> if we wait long enough consistencity is more guaranted (after writes/dropping or any modifications)
+#### Relational -> ACID 
+<br> Atomic - consistencity - Isolation - Durability 
+<br> slow  writes than NOSQL as of consistencity  
+#### Object DataBase
+<br> classes and objects like in java
+<br> use ORM frameworks to make data in it into code like (Jpa or hypernate)
+#### Wide column DB
+<br> we can NOT drop FK col in Relational 
+<br> We can NOT add column in Relational without saving prev nulls
+<br> so need for Wide column sql that stores data as follows : 
+(pic19)
+#### Document Database vs generic K/V database
+<br> Kv: Dictionary as logical unig(table in relational)
+<br> Doc: called Document 
+<br> Kv: access  through the Key Alone 
+<br> Doc: access through any attribute
+<br> Kv: Key value in flat namespace  
+<br> Doc: Key value in hierarchy of documents (nested=doc refer to another doc)
+<br> Kv: DataModel is simple only one index on key
+<br> Doc: more complex can have many indexes
+#### Document Database vs relational database
+<br> rel: structured data 
+<br> doc: semi structured data
+<br> rel: schema forced
+<br> doc: schema is  flexible 
+<br> rel: Data for one entity in many tables
+<br> doc: Data  for one entity in same Document
+<br> rel: Data for one entity in many tables
+<br> doc: Data  for one entity in same Document
+<br> rel: SQl 
+<br> doc: No SQL
+<br> rel: Metadata is stored outside table structure
+<br> doc: Metadata is stored INside Document structure
+(pic19) <br> mapping chart 
+<br>
+<br>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>
 <br>
 <br>
