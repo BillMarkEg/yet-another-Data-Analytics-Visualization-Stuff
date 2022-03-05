@@ -520,22 +520,26 @@ XXXXX <br> backup types and demo
 <br> #### cloud option
 <br> if size of datais large => more money
 ######################################################################################################################################
-## Recognize the need for Document Database 
+## Recognize the need for Document(Json) Database 
+
 #### Trx processing Vs Analytical procession
 <br> Ensure **inserts** are correct (little rows)
 <br> **acess** recent data 
 <br> *updates*  
 <br> Fast Acess 
 <br> single sources (database)
+
 #### Analytical 
 <br> Large batches
 <br> historical processing 
 <br> Long running jobs not realtime
 <br> Multiple Data sources 
+
 #### Note
 <br> NOsql Fast writes -> no need for check consistancity after each write
 <br> Document db is considered as key/value nosql too                                                       
 <br> Nosql -> low scan vs high scan -> Hdfs(big data lake)
+
 #### CAP
 <br> C -> every node recieve same read/write or Error
 <br> A -> Every request return with no Errors
@@ -543,21 +547,26 @@ XXXXX <br> backup types and demo
 <br> so we choose only 2 Eg. when Partition is failed in node so 2-options 
 <br> 1:: to show Error -> consistencity option
 <br> 2:: to return it -> availability option 
+
 (pic19) ### N0SQL -> BASE  
 <br> Basicaly Available -> replication/sharding so availablity is good
 <br> Soft State -> consistencity is not guaranted in read  
 <br> Eventual consistencity -> if we wait long enough consistencity is more guaranted (after writes/dropping or any modifications)
+
 #### Relational -> ACID 
 <br> Atomic - consistencity - Isolation - Durability 
 <br> slow  writes than NOSQL as of consistencity  
+
 #### Object DataBase
 <br> classes and objects like in java
 <br> use ORM frameworks to make data in it into code like (Jpa or hypernate)
+
 #### Wide column DB
 <br> we can NOT drop FK col in Relational 
 <br> We can NOT add column in Relational without saving prev nulls
 <br> so need for Wide column sql that stores data as follows : 
 (pic19)
+
 #### Document Database vs generic K/V database
 <br> Kv: Dictionary as logical unig(table in relational)
 <br> Doc: called Document 
@@ -567,6 +576,7 @@ XXXXX <br> backup types and demo
 <br> Doc: Key value in hierarchy of documents (nested=doc refer to another doc)
 <br> Kv: DataModel is simple only one index on key
 <br> Doc: more complex can have many indexes
+
 #### Document Database vs relational database
 <br> rel: structured data 
 <br> doc: semi structured data
@@ -581,36 +591,36 @@ XXXXX <br> backup types and demo
 <br> rel: Metadata is stored outside table structure
 <br> doc: Metadata is stored INside Document structure
 (pic19) <br> mapping chart 
-<br>
-<br>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+#### Couch base (Document Database in cloud)
+<br> stores Data as items
+<br> Item : key (unique within bucket & < 250 bytes  ) + value 
+<br> value -> Binary (can't be parsed or indexed just read) / Json (can be ) || less than 20 MIB size max      
+<br> Queried by -> N1QL Language (sql like)
+<br> same field in json can be in different types (string , nested json  or  number ) and may even not exists.
+
+#### Document Databse - Data Modeling 
+<br> In relational -> normalization + joins to get all entity data + slow read + fast DMLs + bad disk utilization (more storage)
+<br> In Document -> all entitiy data in one document .. collected into same (bucket/container/collection)
+<br> entities defined in document in TYPE attribute 
+<br> avoid lkp tables + relationships with other tables => all must be hardcoded in master (main document) by combining documents of parent and childs (like joins in relational model ) 
+<br> this result in sync issues if user data changed but gives fast retrieve so trade off
+(pic19) <br> doc modeling 
+<br> when combine -> if both entities are read/writes togeter else-> store them in normalized format  
+#### So A inside B or B inside A
+<br> if A-B is one-many/one-one -> B nested in A so A will contains many doc on B  
+<br> if A-B is many-many -> so if A is mostly read/writes so it will store the id of B not the while doc as above case this called Referencing 
+<br> why? as they didnt change together as above so we do this for good syncing.
+<br> store id in <array>
+<br> multiple values -> array 
+<br> SchemaLess : NO schema for all table like in relational model. 
+<br> each Doc has its own schema inside it that give more flexiblity 
+<br> define Expiry (TTL) for each Document.
+#### couchDB analytics
+<br> can be used on operations(as OLTP)
+<br> make another snapshot for processing and CDC 
+<br> make separate nodes for analytics
+<br> can integrate with spark and kafka 
 <br>
 <br>
 <br>
