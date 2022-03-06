@@ -649,11 +649,11 @@ XXXXX <br> backup types and demo
 <br> add "apoc.import.file.enabled=true"
 <br> apply and open folder -> add file to import data.
 <br> start the graph 
-#### 
-<br>
-<br>
-<br>
-<br>
+#### Data Model
+<br> Eg. Ahmed (user node) watched (relashionship Node - in 2020 as properties in relashionship- ) XMen (film node)
+<br> in above we can't querey films watched by ahmed in specific time so => normalization --> add in relationship and add years nodes. 
+<br> so more flexibility and easier queries but much retrieve time (so model data on ur need)
+<br> 
 <br>
 <br>
 <br>
