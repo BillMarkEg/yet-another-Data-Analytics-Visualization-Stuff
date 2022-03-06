@@ -620,7 +620,45 @@ XXXXX <br> backup types and demo
 <br> can be used on operations(as OLTP)
 <br> make another snapshot for processing and CDC 
 <br> make separate nodes for analytics
-<br> can integrate with spark and kafka 
+<br> can integrate with spark and kafka
+################################################################################################################################################
+## Introduction to Graph Databases, Cypher, and Neo4j
+<br> Document -> objects store
+<br> Graph -> relationships
+<br> rute Force Algorithms are exactly what they sound like – straightforward methods of solving a problem that rely on sheer computing power and trying every possibility 
+<br> so in document if we wanna get all customers by specific poduct we must check every document of customer (one to many so customer has all products nested inside)
+<br> or multiple joins if many to many so Graph comes here.
+<br> agility in Graph -> means we can add/remove nodes and make many changes (in relational we can't remove PK for eg. if there is foreign on it directly ) just schemaless
+<br> Relationship is much imp as node (first citizen class) not just neseted/refrences and join  in document & relational .. just separate node with attributes too.
+<br> neo4j is ACID -> all trx happens or none .any issue can roll back to good state  
+<br> neo4j can scale up/out 
+<br> id of node is auto-incremental 
+<br> node has label so we can differ one from another
+<br> properties of node/relationships are key/valye
+<br> node has propertities -> that are indexed (so when we query just check dictionary and be so fast) 
+<br> we can add unique constrain to check if property is not duplicated.
+<br> if field is ommited (as its schemaless) it will not be checked for constrain or queried in index so no problem
+<br> Project can contain multiple databases (1 active at a time)
+#### Demo
+<br> install desctop from website for windows
+<br> add new graph from local and name it 
+<br> click  plugins in desctop app
+<br> install APOC
+<br> APOC : lib that has many build in functions/procedures like import data 
+<br> Manage Graph -> setting 
+<br> add "apoc.import.file.enabled=true"
+<br> apply and open folder -> add file to import data.
+<br> start the graph 
+#### 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
