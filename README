@@ -653,31 +653,29 @@ XXXXX <br> backup types and demo
 <br> Eg. Ahmed (user node) watched (relashionship Node - in 2020 as properties in relashionship- ) XMen (film node)
 <br> in above we can't querey films watched by ahmed in specific time so => normalization --> add in relationship and add years nodes. 
 <br> so more flexibility and easier queries but much retrieve time (so model data on ur need)
-<br> 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-
-
-
-
-
+#### syntax cypher
+<br> declarative : focus on what to do not how
+<br> auto group by no need to write it 
+<br> limit 10 skip 5 so result will be  => 6 to 16
+<br> return 1) just return only ////  2) return with give 2 layers of manupulating the result of first one
+<br> () means any node 
+<br> predicate returns 0 or 1 
+<br> directions ---- means --> and <--
+<br> empty means every eg. [] any relationship () anynode
+<br> hubs count A--B so 1 hub a--b--c so 2 hubs 
+<br> optional match --> if no result returns null
+<br> to delete property -> set into null as it keeps no nulls so will be deleted
+<br> copy all property of node to another -> set malt = chris (malt and chris are nodes)
+<br> set malt:doctor (users ":" to add tag)
+<br> remove property (remove keyward) another way to do it
+<br> merge : like match but creates if not exists with all same properties too.(complete match)
+#### aditional topics
+<br> index : better searching in neo4j
+<br> - take more storage - reorder data each time we insert so slow insertion 
+<br> + instead of searching all data just this property has index  (its non clustered index the only and one type)
+<br> unique : to check uniquness 
+#### Apis
+<br> bolt api : faster and easier to do 
+<br> rest api :just like York tool 
+<br> impo of root provider -> create index for all nodes
+<br> relationship property should take more memory.
